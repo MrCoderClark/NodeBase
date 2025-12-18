@@ -3,7 +3,7 @@ import {
   Editor,
   EditorError,
   EditorLoading,
-} from '@/features/editor/components/page';
+} from '@/features/editor/components/editor';
 import { prefetchWorkflow } from '@/features/workflows/server/prefetch';
 import { requireAuth } from '@/lib/auth-utils';
 import { HydrateClient } from '@/trpc/server';
