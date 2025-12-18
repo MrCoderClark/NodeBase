@@ -26,9 +26,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="h-full overflow-hidden">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`h-full overflow-hidden, ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <TRPCReactProvider>
           <NuqsAdapter>
