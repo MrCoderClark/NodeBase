@@ -23,7 +23,7 @@ export function WorkflowNode({
   return (
     <>
       {showToolbar && (
-        <NodeToolbar>
+        <NodeToolbar className="nodrag">
           <Button size="sm" variant="ghost" onClick={onSettings}>
             <SettingsIcon className="size-4" />
           </Button>
@@ -41,7 +41,7 @@ export function WorkflowNode({
         >
           <p className="font-medium">{name}</p>
           {description && (
-            <p className="text-muted-foreground truncate text-sm">
+            <p className="text-muted-foreground text-sm whitespace-pre-line">
               {description}
             </p>
           )}
